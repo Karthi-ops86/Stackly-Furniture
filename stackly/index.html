@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stackly Furniture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top nav-main">
+      <div class="container">
+        <a class="navbar-brand logo" href="#"><i class="fa-solid fa-bolt"></i> STACKLY</a>
+        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto gap-lg-3">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rooms">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#deals">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="#best">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stories">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-3 py-2 py-lg-0">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="btn btn-brand">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SLIDER -->
+    <header id="home" class="hero">
+      <div class="slide ph ph1 active">
+        <div class="hero-in">
+          <small class="eyebrow light">TIMELESS COMFORT</small>
+          <h1>Designed For<br>Beautiful Living</h1>
+          <p>Thoughtful furniture made for the way you live.</p>
+          <a href="#best" class="btn btn-outline-pill">
+            Explore Collection
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="slide ph ph2">
+        <div class="hero-in">
+          <small class="eyebrow light">HANDCRAFTED DETAILS</small>
+          <h1>Where Comfort<br>Meets Craft</h1>
+          <p>Timeless materials and pieces made to last.</p>
+          <a href="#best" class="btn btn-outline-pill">
+            Explore Collection
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="slide ph ph3">
+        <div class="hero-in">
+          <small class="eyebrow light">MODERN LIVING</small>
+          <h1>Crafted To<br>Be Cherished</h1>
+          <p>Pieces that grow with your life and style.</p>
+          <a href="#best" class="btn btn-outline-pill">
+            Explore Collection
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+      <button class="arrow left" id="hPrev"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="arrow right" id="hNext"><i class="fa-solid fa-arrow-right"></i></button>
+      <div class="dots"><span class="on"></span><span></span><span></span></div>
+    </header>
+
+    <!-- FURNITURE TO LOVE -->
+    <section class="sec container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <small class="eyebrow">MODERN & ELEGANT</small>
+          <h2 class="display">Furniture to love now & forever</h2>
+          <p class="muted my-4">
+            Discover furniture that's designed to be cherished, evolving with your life and style, making every moment at home even more special.
+          </p>
+          <hr>
+          <div class="feat">
+            <i class="fa-solid fa-box-open"></i>
+            <div><b>Free Shipping</b><small>Enjoy free shipping on all orders</small></div>
+          </div>
+          <div class="feat">
+            <i class="fa-solid fa-tags"></i>
+            <div><b>Affordable Prices</b><small>We offer competitive prices</small></div>
+          </div>
+          <a href="#best" class="btn btn-outline-brand mt-3">
+            View Collection
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3 position-relative">
+            <div class="col-6">
+              <div class="pic ph f1"></div>
+            </div>
+            <div class="col-6">
+              <div class="pic ph f2"></div>
+            </div>
+            <div class="badge-round brand">THE SPRING<b>NEW</b>COLLECTION</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="sec container">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <h2 class="display">Beautiful finds for any room</h2>
+        <a href="#" class="small brandc text-decoration-none">
+          View All Shop
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="row g-3 text-center">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="cat ph c1"></div>
+          <p>Outdoor</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="cat ph c2"></div>
+          <p>Bath Room</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="cat ph c3"></div>
+          <p>Lighting</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="cat ph c4"></div>
+          <p>Kitchen</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="cat ph c5"></div>
+          <p>Table</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="cat ph c6"><span class="new">NEW</span></div>
+          <p>Home Decor</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEALS -->
+    <section id="deals" class="deals">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <small class="eyebrow">WEEKLY DEALS</small>
+            <h2 class="display light">Earn reward every time you shop.</h2>
+            <p class="light-m">
+              Special offers
+              &
+              perks, carefully selected furniture pieces and members-only benefits designed to make every purchase more rewarding.
+            </p>
+            <p class="fw-bold text-white mb-2">Hurry up! Sale ends in:</p>
+            <div class="count">
+              <div><b id="d">54</b><span>Days</span></div>
+              <div><b id="h">05</b><span>Hours</span></div>
+              <div><b id="m">29</b><span>Min</span></div>
+              <div><b id="s">37</b><span>Sec</span></div>
+            </div>
+            <a href="#best" class="btn btn-outline-pill mt-4">
+              Shop Now
+              <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+          <div class="col-lg-7">
+            <div class="deal-img ph d1">
+              <div class="badge-round">BIG SALE<b>30%</b>OFF</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section id="best" class="sec container text-center">
+      <small class="eyebrow">CUSTOMER FAVORITES AND DESIGN</small>
+      <h2 class="display mb-5">Our Best Sellers</h2>
+      <div class="position-relative">
+        <button class="arrow soft left" id="pPrev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="track" id="track"></div>
+        <button class="arrow soft right" id="pNext"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section id="rooms" class="sec container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-7">
+          <h2 class="display">Designed for <em>every space.</em></h2>
+        </div>
+        <div class="col-lg-4 offset-lg-1">
+          <p class="muted">
+            Thoughtfully designed furniture for spaces that feel personal, comfortable and beautifully yours.
+          </p>
+          <a href="#" class="link-line">
+            Explore All Collections
+            <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-6">
+          <div class="room ph r1 tall">
+            <div>
+              <small>01 · LIVE & RELAX</small>
+              <h3>Living Room</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="room ph r2">
+                <div>
+                  <small>02 · REST & RECHARGE</small>
+                  <h3>Bedroom</h3>
+                </div>
+                <i class="fa-solid fa-arrow-right go on"></i>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="room ph r3">
+                <div>
+                  <small>03 · GATHER TOGETHER</small>
+                  <h3>Dining</h3>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square go"></i>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="room ph r4">
+                <div>
+                  <small>04 · WORK & FOCUS</small>
+                  <h3>Office</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="stories" class="stories">
+      <div class="container">
+        <small class="eyebrow">STORIES FROM OUR CUSTOMERS</small>
+        <h2 class="display light mb-5">Loved by people <em>who live beautifully.</em></h2>
+        <div class="tcard">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <div class="stars">★★★★★</div>
+              <p class="quote" id="quote"></p>
+              <div class="d-flex align-items-center gap-3">
+                <span class="avatar"></span>
+                <div>
+                  <b class="text-white" id="who"></b>
+                  <br>
+                  <small class="light-m">Verified Customer</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="ph t-img"><small>MADE TO<br>BE LIVED IN</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center my-4">
+          <span class="light-m small"><b class="text-white" id="idx">01</b> ——— 04</span>
+          <div>
+            <button class="arrow ring" id="tPrev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="arrow ring" id="tNext"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="stats">
+          <div><b>4.9/5</b><span>Average rating</span></div>
+          <div><b>2,500+</b><span>Happy customers</span></div>
+          <div><b>98%</b><span>Would recommend us</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAKE ROOM -->
+    <section class="banner ph ph4">
+      <div class="hero-in text-center mx-auto">
+        <small class="eyebrow light">CREATE YOUR SPACE</small>
+        <h2 class="display light">Make room for<br><em>something beautiful.</em></h2>
+        <p class="light-m mx-auto" style="max-width:560px">
+          Thoughtfully designed furniture, timeless materials and pieces made to become part of your story.
+        </p>
+        <a href="#best" class="btn btn-brand me-2">
+          Shop Collection
+          <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+        <a href="#rooms" class="btn btn-outline-sq">Our Story <i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="sec container text-center news">
+      <small class="eyebrow">STAY IN THE KNOW</small>
+      <h2 class="display">A little inspiration,<br><em>delivered.</em></h2>
+      <p class="muted mx-auto" style="max-width:520px">
+        Join our community for new collection previews, thoughtful interiors, exclusive offers and design inspiration.
+      </p>
+      <form id="nl" class="nl mx-auto">
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Your email address" required>
+        <button class="arrow ring dark"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <small class="muted d-block mt-4" id="nlMsg">
+        <i class="fa-solid fa-lock brandc"></i>
+        No spam. Just beautiful things.
+      </small>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="foot">
+      <div class="container">
+        <div class="row g-4 pb-5">
+          <div class="col-lg-4">
+            <div class="logo mb-4"><i class="fa-solid fa-bolt"></i> STACKLY</div>
+            <p class="fs-5 light-m">Furniture that makes every space feel like home.</p>
+            <a href="#" class="text-white fw-bold text-decoration-none">
+              Discover our story
+              <i class="fa-solid fa-arrow-right brandc ms-1"></i>
+            </a>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1">
+            <h6>EXPLORE</h6>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Shop</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>CUSTOMER CARE</h6>
+            <ul>
+              <li>Shipping & Delivery</li>
+              <li>Returns & Exchanges</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h6>GET IN TOUCH</h6>
+            <ul>
+              <li><i class="fa-regular fa-envelope brandc me-2"></i>support@stackly.com</li>
+              <li><i class="fa-solid fa-phone brandc me-2"></i>+91 9080 778471</li>
+              <li><i class="fa-solid fa-location-dot brandc me-2"></i>24 street, Chennai, India</li>
+            </ul>
+            <a href="#" class="btn btn-outline-sq mt-2">
+              Contact Us
+              <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center border-top border-bottom py-4 line">
+          <small class="eyebrow light">FOLLOW STACKLY</small>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 small light-m">
+          <span>© 2026 Stackly Furniture. All rights reserved.</span>
+          <span class="d-flex gap-3"><span>Privacy</span><span>Terms</span><span>Cookies</span></span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

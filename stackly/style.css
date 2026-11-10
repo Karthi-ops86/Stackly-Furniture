@@ -1,0 +1,765 @@
+/* ==========================================================
+   STACKLY FURNITURE - STYLESHEET
+   1. Variables & Base      6. Best Sellers      11. Newsletter
+   2. Buttons               7. Categories        12. Footer
+   3. Navbar                8. Weekly Deals      13. Responsive
+   4. Hero Slider           9. Furniture to Love
+   5. Rooms                 10. Testimonials & Banner
+   ========================================================== */
+
+
+/* ---------- 1. VARIABLES & BASE ---------- */
+:root {
+  --brand: #b07a50;
+  --dark: #241d19;
+  --cream: #f7f3ec;
+  --ink: #241d19;
+  --mute: #8a7d73;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3,
+.display,
+.quote,
+.count b,
+.stats b {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+em {
+  color: var(--mute);
+}
+
+.light em,
+.hero em {
+  color: #e8dfd4;
+}
+
+.sec {
+  padding: 80px 12px;
+}
+
+.display {
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.05;
+}
+
+.light   { color: #f7f3ec; }
+.light-m { color: #c9bdb1; }
+.muted   { color: var(--mute); }
+.brandc  { color: var(--brand); }
+
+.eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: var(--brand);
+}
+
+.eyebrow.light {
+  color: #e4d6c8;
+}
+
+/* Image placeholders - replace with your own photos, e.g.
+   .r1 { background-image: url(img/living.jpg); } */
+.ph {
+  background: linear-gradient(135deg, #6b4a35, #2b211b);
+  background-size: cover;
+  background-position: center;
+}
+
+.ph1 { background: url('img/hero-1.jpg') center / cover no-repeat, linear-gradient(135deg, #8a4b34, #3a2a20); }
+.ph2 { background: url('img/hero-2.jpg') center / cover no-repeat, linear-gradient(135deg, #5a4a3c, #1f1814); }
+.ph4 { background: url('img/banner.jpg') center / cover no-repeat, linear-gradient(135deg, #5a4a3c, #1f1814); }
+.ph3 { background: url('img/hero-3.jpg') center / cover no-repeat, linear-gradient(135deg, #7a5a40, #2a2018); }
+
+.r1 { background: url('img/room-living.jpg') center / cover no-repeat, linear-gradient(160deg, #4a4f5c, #22252c); }
+.r2 { background: url('img/room-bedroom.jpg') center / cover no-repeat, linear-gradient(135deg, #a0643a, #4a2c1a); }
+.r3 { background: url('img/room-dining.jpg') center / cover no-repeat, linear-gradient(135deg, #9a5a2e, #5a2a1a); }
+.r4 { background: url('img/room-office.jpg') center / cover no-repeat, linear-gradient(135deg, #4a4a50, #2a2a2e); }
+
+.c1 { background: url('img/cat-outdoor.jpg') center / cover no-repeat, linear-gradient(#8a9aa8, #3a3a30); }
+.c2 { background: url('img/cat-bathroom.jpg') center / cover no-repeat, linear-gradient(#8a7a68, #3a342e); }
+.c3 { background: url('img/cat-lighting.jpg') center / cover no-repeat, linear-gradient(#6a6a6e, #2c2c30); }
+.c4 { background: url('img/cat-kitchen.jpg') center / cover no-repeat, linear-gradient(#9a3a30, #d8c8b8); }
+.c5 { background: url('img/cat-table.jpg') center / cover no-repeat, linear-gradient(#c9a070, #8a6a48); }
+.c6 { background: url('img/cat-decor.jpg') center / cover no-repeat, linear-gradient(#b8a8c0, #7a5a3a); }
+
+.d1    { background: url('img/deal.jpg') center / cover no-repeat, linear-gradient(135deg, #a05a2a, #9bb0c8); }
+.f1    { background: url('img/feature-1.jpg') center / cover no-repeat, linear-gradient(#3a3d44, #c89a68); }
+.f2    { background: url('img/feature-2.jpg') center / cover no-repeat, linear-gradient(#e8e8e8, #c89a68); }
+.t-img { background: url('img/testimonial.jpg') center / cover no-repeat, linear-gradient(135deg, #d8d0c4, #4a463e); }
+
+
+/* ---------- 2. BUTTONS ---------- */
+.btn-brand {
+  padding: 0.7rem 1.4rem;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.btn-brand:hover {
+  background: #966339;
+  color: #fff;
+}
+
+.btn-outline-pill,
+.btn-outline-sq {
+  padding: 0.8rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.btn-outline-pill { border-radius: 40px; }
+.btn-outline-sq   { border-radius: 2px; }
+
+.btn-outline-pill:hover,
+.btn-outline-sq:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.btn-outline-brand {
+  padding: 0.8rem 1.6rem;
+  border: 1px solid var(--brand);
+  border-radius: 40px;
+  color: #7a4a2a;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.btn-outline-brand:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.link-line {
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--brand);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Round arrow buttons (sliders) */
+.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.arrow:hover {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+.arrow.left  { left: 24px; }
+.arrow.right { right: 24px; }
+
+.arrow.soft {
+  position: absolute;
+  top: 40%;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.arrow.soft.left  { left: -8px; }
+.arrow.soft.right { right: -8px; }
+
+.arrow.ring {
+  border-color: #7a6a5c;
+  background: transparent;
+}
+
+.arrow.ring.dark {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+
+/* ---------- 3. NAVBAR ---------- */
+.nav-main {
+  height: 80px;
+  background: var(--cream);
+  border-bottom: 1px solid #e6ddd0;
+}
+
+.nav-main .navbar-collapse {
+  background: var(--cream);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6b4a3a;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #6b5d54;
+  font-size: 0.9rem;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--brand);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.login {
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/* ---------- 4. HERO SLIDER ---------- */
+.hero {
+  position: relative;
+  height: calc(100vh - 80px);
+  min-height: 520px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 20, 14, 0.45);
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero-in {
+  position: relative;
+  max-width: 760px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  margin-bottom: 24px;
+  font-size: clamp(2.6rem, 8vw, 6rem);
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 540px;
+  margin: 0 auto 28px;
+  color: #eee;
+}
+
+.hero .arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  transform: translateY(-50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+  transform: translateX(-50%);
+}
+
+.dots span {
+  width: 48px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+}
+
+.dots span.on {
+  background: var(--brand);
+}
+
+
+/* ---------- 5. ROOMS ---------- */
+.room {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 260px;
+  padding: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.room::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.6));
+}
+
+.room > * {
+  position: relative;
+}
+
+.room.tall {
+  min-height: 540px;
+}
+
+.room small {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  opacity: 0.85;
+}
+
+.room h3 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.go {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.go.on {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+
+/* ---------- 6. BEST SELLERS ---------- */
+.track {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  text-align: left;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.prod {
+  flex: 0 0 calc(20% - 23px);
+  min-width: 220px;
+  scroll-snap-align: start;
+}
+
+.prod .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1.05;
+  margin-bottom: 14px;
+  border-radius: 4px;
+  background: #f6f6f7;
+  font-size: 4rem;
+  color: #b9a590;
+}
+
+.prod .img {
+  overflow: hidden;
+}
+
+.prod .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prod p {
+  margin: 0 0 4px;
+}
+
+.prod .st {
+  color: var(--brand);
+  font-size: 0.8rem;
+}
+
+
+/* ---------- 7. CATEGORIES ---------- */
+.cat {
+  position: relative;
+  aspect-ratio: 1 / 1.28;
+  border-radius: 22px;
+}
+
+.cat + p {
+  margin-top: 12px;
+  font-size: 1.05rem;
+}
+
+.new {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+
+/* ---------- 8. WEEKLY DEALS ---------- */
+.deals {
+  padding: 90px 0;
+  background: var(--dark);
+}
+
+.deals .display {
+  margin-bottom: 24px;
+}
+
+.count {
+  display: flex;
+  gap: 28px;
+}
+
+.count b {
+  display: block;
+  color: var(--brand);
+  font-size: 2.6rem;
+}
+
+.count span {
+  color: #c9bdb1;
+  font-size: 0.75rem;
+}
+
+.deal-img {
+  position: relative;
+  height: 520px;
+  border-radius: 260px 0 0 0;
+}
+
+.badge-round {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-align: center;
+  outline: 1px dashed #fff;
+  outline-offset: -8px;
+}
+
+.badge-round b {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.deal-img .badge-round {
+  top: 30px;
+  left: 70px;
+}
+
+.badge-round.brand {
+  top: 30%;
+  left: 50%;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  transform: translateX(-50%);
+}
+
+
+/* ---------- 9. FURNITURE TO LOVE ---------- */
+.feat {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.feat i {
+  font-size: 1.6rem;
+}
+
+.feat small {
+  display: block;
+  color: var(--mute);
+}
+
+.pic {
+  height: 470px;
+  border-radius: 22px;
+}
+
+
+/* ---------- 10. TESTIMONIALS & BANNER ---------- */
+.stories {
+  padding: 80px 0;
+  background: var(--dark);
+}
+
+.tcard {
+  padding: 48px;
+  border-top: 1px solid #3a302a;
+  background: #2a221d;
+}
+
+.stars {
+  margin-bottom: 16px;
+  color: var(--brand);
+}
+
+.quote {
+  min-height: 7em;
+  margin-bottom: 28px;
+  color: #f7f3ec;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  line-height: 1.3;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: url('img/avatar.jpg') center / cover no-repeat, linear-gradient(135deg, #b07a50, #5a4030);
+}
+
+.t-img {
+  display: flex;
+  align-items: flex-end;
+  height: 280px;
+  padding: 20px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  padding-top: 40px;
+  border-top: 1px solid #3a302a;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats b {
+  display: block;
+  color: #f7f3ec;
+  font-size: 1.6rem;
+}
+
+.stats span {
+  color: var(--brand);
+  font-size: 0.75rem;
+}
+
+.banner {
+  position: relative;
+  padding: 140px 20px;
+  color: #fff;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 20, 14, 0.55);
+}
+
+.banner .hero-in {
+  position: relative;
+}
+
+
+/* ---------- 11. NEWSLETTER ---------- */
+.news h2 {
+  margin-bottom: 20px;
+}
+
+.nl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 580px;
+  margin-top: 36px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #8a7d73;
+}
+
+.nl i {
+  color: var(--brand);
+}
+
+.nl input {
+  flex: 1;
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+
+/* ---------- 12. FOOTER ---------- */
+.foot {
+  padding: 80px 0 40px;
+  background:
+    linear-gradient(rgba(36, 29, 25, 0.94), rgba(36, 29, 25, 0.94)),
+    url('img/footer-bg.jpg') center / cover no-repeat,
+    linear-gradient(135deg, #6b4a35, #2b211b);
+  color: #c9bdb1;
+}
+
+.foot .logo {
+  color: #8a5a4a;
+}
+
+.foot h6 {
+  margin-bottom: 22px;
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+}
+
+.foot ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foot li {
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+}
+
+.foot .line {
+  border-color: #4a3e36 !important;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #6a5a50;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.social a:hover {
+  background: var(--brand);
+}
+
+
+/* ---------- 13. RESPONSIVE ---------- */
+
+/* Tablet and below */
+@media (max-width: 991px) {
+  .sec        { padding: 56px 12px; }
+  .room.tall  { min-height: 320px; }
+  .pic        { height: 320px; }
+  .tcard      { padding: 28px; }
+  .stats      { gap: 24px; }
+  .count      { gap: 18px; }
+  .hero .arrow { display: none; }
+
+  .deal-img {
+    height: 360px;
+    border-radius: 180px 0 0 0;
+  }
+}
+
+/* Phones */
+@media (max-width: 575px) {
+  .nav-main {
+    height: auto;
+    min-height: 64px;
+  }
+
+  .banner {
+    padding: 90px 16px;
+  }
+
+  .prod {
+    flex-basis: 70%;
+  }
+
+  .deal-img .badge-round {
+    left: 20px;
+    width: 110px;
+    height: 110px;
+  }
+}
